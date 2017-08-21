@@ -1,0 +1,42 @@
+.expandable{
+    width: 200px;
+    margin: 20px 0 0 50px;
+}
+
+.expandable-header{
+    background-color: $color-green;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font: $font-bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.open .expandable-header{
+    border-radius: 5px 5px 0 0;
+}
+
+.open #carret{
+    transform: rotate(180deg);
+}
+
+.expandable-toggle{
+    padding: 0;
+    background-color: transparent;
+}
+
+.expandable-toggle:focus{
+    outline: 0;
+}
+
+.expandable-body{
+    border-color: $color-grey;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 5px 5px;
+    padding: 25px 10px;
+    font: $font-light;
+    color: $color-grey-dark; 
+}

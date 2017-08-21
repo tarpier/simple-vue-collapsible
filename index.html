@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"></link>
+    <title>Tallence</title>
+</head>
+
+<body>
+
+    <div class="expandable" :class="{ open: isExpanded }">
+        <div class="expandable-header" @click="isExpanded = !isExpanded">
+            <p>Headline</p>
+            <button class="expandable-toggle">
+                <svg id="carret" width="20" height="20" viewBox="0 0 20 20"><path fill="#FFF" fill-rule="evenodd" d="M16 7l-6 6-6-6"/></svg>
+            </button>
+        </div>
+        <div class="expandable-body" v-show="isExpanded">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/vue@2.4.2"></script>
+    <script>
+        var app = new Vue({
+            el: '.expandable',
+            data: {
+                isExpanded: false
+            }
+        })
+    </script>
+</body>
+
+</html>

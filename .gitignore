@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+
+#build folders are not to be checked in
+css
