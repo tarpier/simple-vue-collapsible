@@ -1,14 +1,16 @@
-#Simple Collapsible
+# Simple Collapsible
+
+## Getting Started
 
 ### Installing
 
 Clone the repo and install via NPM then run via gulp.
 
-Uses browser-sync to reload your browser
+Uses browser-sync and sass via gulp.
 
 ```
 git clone https://github.com/tarpier/simple-vue-collapsible.git
 cd simple-vue-collapsible
 npm install
-gulp
+npm run develop
 ```
